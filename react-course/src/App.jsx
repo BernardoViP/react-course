@@ -14,7 +14,7 @@ function App() {
         tag="React"
         title="Curso React - Senai"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
-        buttonLeft="Leia mais"
+        buttonLeft="Leia-mais"
         buttonRight="Documentação"
         image={Pikachu}
       />
