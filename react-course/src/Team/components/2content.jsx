@@ -1,8 +1,5 @@
 import "../styles.css"
-import Image from "../../assets/images/svg/cimage.svg";
-import Linkedin from "../../assets/images/svg/LinkedIn.svg"
-import X from "../../assets/images/svg/X.svg"
-import Drible from "../../assets/images/svg/Dribble.svg"
+import {Image, Linkedin, X, Dribble} from "../../assets/images/svg"
 
 export default function Content() {
   return (
@@ -21,7 +18,7 @@ export default function Content() {
            <img src={X} alt="" />
            </a>
            <a href="https://dribbble.com/" target="blank">
-           <img src={Drible} alt="" />
+           <img src={Dribble} alt="" />
            </a>
           </div>
         </div>

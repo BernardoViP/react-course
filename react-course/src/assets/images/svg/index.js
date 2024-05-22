@@ -1,0 +1,6 @@
+export { default as Dribble } from "./Dribble.svg"
+export { default as Image } from "./cimage.svg"
+export { default as Linkedin } from "./LinkedIn.svg"
+export { default as ChevronRight } from "./Vector.svg"
+export { default as X } from "./X.svg"
+export { default as Pikachu } from "./Pikachu.jpg"
