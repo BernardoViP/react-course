@@ -1,17 +1,18 @@
-import "./App.css";
+import "./App.css"
+import PriceContent from "./components/Pricing/src/pattern/composition/price-content.composition";
+import PriceSection from "./components/Pricing/src/pattern/composition/price-section.composition";
 
-import Content from "./Team/components/3main";
-import Main from "./Team/components/2content";
-import Section from "./Team/components/1section";
+
 
 function App() {
   return (
     <body>
-      <Content />
-      <Main />
-      <Section />
+      <PriceSection/>
+      <PriceContent/>
     </body>
   );
 }
 
 export default App;
+
+
