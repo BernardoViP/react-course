@@ -28,15 +28,13 @@
 
 /* basic plan price */
 
-.box-border {
+.box-container {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 32px;
-    gap: 32px;
     width: 560px;
-    height: 511px;
 }
 
 .price-content > h1 {
@@ -62,10 +60,14 @@
 
 }
 
+.price-benefits{
+    display: flex;
+    gap: 16px;
+    
+}
 /* botão get started */
 .button-start {
     margin-top: 32px;
-    margin-bottom: 32px;
     border: 1px solid black;
     background-color: black;
     color: white;
