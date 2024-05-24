@@ -3,9 +3,9 @@ import '../../../styles.css'
 export default function Section() {
     return (
        <div className="section-container">
-            <h3>Tagline</h3>
-            <h1>Our team</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <h3>Isekai</h3>
+            <h1>Tensei Shitara Slime</h1>
+            <p>Principais pessoas da cidade</p>
        </div>
     )
 }

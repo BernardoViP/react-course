@@ -1,11 +1,16 @@
 import '../../../styles.css'
 
-import { Dribble, EmptyImage, Linkedin, X } from "../../assets/images"
+import { Dribble, EmptyImage, Linkedin, X , } from "../../assets/images"
 
 export default function Content(props) {
     return (
         <div className='content-container'>
-            <img src={props.image ? props.image : EmptyImage} alt="" className='content-image' />
+            <img style={
+                {
+                    borderRadius: "10px",
+                    borderRadius: "50%",
+                }
+            } src={props.image ? props.image : EmptyImage} alt="" className='content-image' />
             <div className="content-title">
                 <h1>{props.name}</h1>
                 <h2>{props.tittle}</h2>
