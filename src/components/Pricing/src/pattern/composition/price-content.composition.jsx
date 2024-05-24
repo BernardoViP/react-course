@@ -5,28 +5,28 @@ const benefits = [
   1 ,2 ,3 ,4 ,5
 ]
 
-function PriceBenefits(props){
+function PriceBenefits(){
   return (
     <div className="price-benefits">
-      <img src={props.image ?  props.image : Check} alt="Check" />
-      <p>{props.text}</p>
+      <img src={Check} alt="Check" />
+      <p>Feature text goes here</p>
     </div> 
   );
 }
 
-export default function PriceContent(props) {
+export default function PriceContent() {
   return (
       <div className="box-container">
         <div className="price-content">
-        <h1>{props.basic}</h1>
-        <h2>{props.month}</h2>
-        <p>{props.yearly}</p>
+        <h1>Basic plan</h1>
+        <h2>$19/mo</h2>
+        <p>or $199 yearly</p>
         {benefits.map((benef) =>{
 
         return <PriceBenefits key={benef}/>
         })}
           <div className="button-start">
-              <p>{props.button}</p>
+              <p>Get started</p>
         </div>
       </div>
     </div>
