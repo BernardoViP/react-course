@@ -18,16 +18,8 @@ export default function Content(props) {
             <p className='content-description'>
             {props.description}
             </p>
-            <div className="content-icons">
-                <a href={props.Linkedin} target='_blank'>
-                    <img src={Linkedin} alt="" />
-                </a>
-                <a href={props.X} target='_blank'>
-                    <img src={X} alt="" />
-                </a>
-                <a href={props.Dribble} target='_blank'>
-                    <img src={Dribble} alt="" />
-                </a>    
+            <div className="content-anime">
+            <p>{props.anime}</p>
             </div>
         </div>
     )

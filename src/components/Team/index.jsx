@@ -8,66 +8,42 @@ const TeamUsers = [
     name: "Diablo",
     role: "Demon Duke",
     description: "Primordial Demon Summoned by Rimuru",
-    socialMedia: {
-      Linkedin: "",
-      X: "",
-      Dribble: ""
-    }
+    anime: "Sobre mim",
   },
   {
     image: Rimuru,
     name: "Rimuru",
     role: "Jura-Tempest Federation Chancellor",
-    description: "King of the monster nation known as the Jura-Tempest Federation",
-    socialMedia: {
-      Linkedin: "",
-      X: "",
-      Dribble: ""
-    }
+    description: "King of Jura-Tempest Federation",
+    anime: "Sobre mim",
   },
   {
     image: Veldora,
     name: "Veldora",
     role: "Storm Dragon",
     description: "The Youngest Brother of the Four Strongest Dragon-kin",
-    socialMedia: {
-      Linkedin: "",
-      X: "",
-      Dribble: ""
-    }
+    anime: "Sobre mim",
   },
   {
     image: Benimaru,
     name: "Benimaru",
     role: "Oni King",
     description: "He is the commander of Rimuru's army",
-    socialMedia: {
-      Linkedin: "",
-      X: "",
-      Dribble: ""
-    }
+    anime: "Sobre mim",
   },
   {
     image: Rigurd,
     name: "Rigurd",
     role: "Prime Minister of Tempest",
-    description: "Being the Goblin King, he is one of the strongest warriors among the goblins",
-    socialMedia: {
-      Linkedin: "",
-      X: "",
-      Dribble: ""
-    }
+    description: "Being the Goblin King Strongest Goblin",
+    anime: "Sobre mim",
   },
   {
     image: Geld,
     name: "Geld",
     role: "Orc King",
     description: "Former Chief Bodyguards of the Orc Lord",
-    socialMedia: {
-      Linkedin: "",
-      X: "",
-      Dribble: ""
-    }
+    anime: "Sobre mim",
   },
   
 ]
@@ -76,8 +52,7 @@ export default function TeamComposition() {
   return (
     <div className="team-container">
       <Team.Section />
-      <div className="team-content-wrapper">
-        
+      <div className="team-content-wrapper">        
         {
             TeamUsers.map((user, key) => {
             return(
@@ -87,9 +62,7 @@ export default function TeamComposition() {
                 name={user.name}
                 role={user.role}
                 description={user.description}
-                Linkedin={user.socialMedia.Linkedin}
-                X={user.socialMedia.X}
-                Dribble={user.socialMedia.Dribble}
+                anime={user.anime}
             />
             )
 })}
