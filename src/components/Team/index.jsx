@@ -1,26 +1,58 @@
 import "./styles.css"
 import { Team } from "./src/pattern/composition"
+import { Diablo, Benimaru, Geld, Veldora, Rigurd, Rimuru} from "./src/assets/images"
 
 const TeamUsers = [
-    {
-        image:"https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/114.png",
-        name:"Bernardo Vieira",
-        role:"Estudante",
-        description:"Aprendiz do trigrinho",
-            socialMedia:{
-                Linkedin:"https://br.linkedin.com/",
-                X:"https://x.com/?lang=pt-br",
-                Dribble:"https://dribbble.com/"  
-            }
-    },
+  {
+    image: Diablo,
+    name: "Diablo",
+    role: "Demon Duke",
+    description: "Primordial Demon Summoned by Rimuru",
+    anime: "Sobre mim",
+  },
+  {
+    image: Rimuru,
+    name: "Rimuru",
+    role: "Jura-Tempest Federation Chancellor",
+    description: "King of Jura-Tempest Federation",
+    anime: "Sobre mim",
+  },
+  {
+    image: Veldora,
+    name: "Veldora",
+    role: "Storm Dragon",
+    description: "The Youngest Brother of the Four Strongest Dragon-kin",
+    anime: "Sobre mim",
+  },
+  {
+    image: Benimaru,
+    name: "Benimaru",
+    role: "Oni King",
+    description: "He is the commander of Rimuru's army",
+    anime: "Sobre mim",
+  },
+  {
+    image: Rigurd,
+    name: "Rigurd",
+    role: "Prime Minister of Tempest",
+    description: "Being the Goblin King Strongest Goblin",
+    anime: "Sobre mim",
+  },
+  {
+    image: Geld,
+    name: "Geld",
+    role: "Orc King",
+    description: "Former Chief Bodyguards of the Orc Lord",
+    anime: "Sobre mim",
+  },
+  
 ]
 
 export default function TeamComposition() {
   return (
     <div className="team-container">
       <Team.Section />
-      <div className="team-content-wrapper">
-        
+      <div className="team-content-wrapper">        
         {
             TeamUsers.map((user, key) => {
             return(
@@ -30,9 +62,7 @@ export default function TeamComposition() {
                 name={user.name}
                 role={user.role}
                 description={user.description}
-                Linkedin={user.socialMedia.Linkedin}
-                X={user.socialMedia.X}
-                Dribble={user.socialMedia.Dribble}
+                anime={user.anime}
             />
             )
 })}
