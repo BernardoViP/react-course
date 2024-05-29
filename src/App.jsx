@@ -4,7 +4,7 @@ import Square from "./styles/styled-components/components/Square";
 function App() {
   return (
     <body>
-      <Square color="red" borderStyle="dotted" />
+      <Square color="red" borderStyle="dashed" />
     </body>
   );
 }
