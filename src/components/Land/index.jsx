@@ -7,8 +7,8 @@ export default function LandComposition() {
   return (
     <div>
       <Header/>
-      <Nav/>
-      <Footer/>
+      <Gallery/>
+      <Contact/>
     </div>
   );
 }

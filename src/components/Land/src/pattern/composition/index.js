@@ -1,9 +1,9 @@
 import Header from "./land-header"
-import Nav from  "./land-nav"
-import Footer  from "./land-footer"
+import Gallery from "./land-gallery"
+import Contact from "./land-contact"
 
 export const Land = {
     Header: Header,
-    Nav: Nav,
-    Footer: Footer,
+    Gallery: Gallery,
+    Contact: Contact,
 }

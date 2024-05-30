@@ -1,6 +1,6 @@
 import '../../../styles.js'
 
-export default function Nav() {
+export default function Gallery() {
     return (
         <div></div>
     )
