@@ -1,11 +1,11 @@
 import "./App.css"
-import Square from "./styles/styled-components/components/Square";
-import TeamComposition from "./components/Team"
+import LandComposition from "./components/Land";
+
 
 function App() {
   return (
     <body>
-      <Square color="red" borderStyle="dashed" />
+      <LandComposition />
     </body>
   );
 }
