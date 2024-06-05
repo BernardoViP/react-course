@@ -1,11 +1,11 @@
 import "./App.css"
-import Header from "./styles/header-module/components/Header";
+import Accordion from "./hooks/components/accordion";
 
 
 function App() {
   return (
     <body>
-      <Header />
+      <Accordion />
     </body>
   );
 }
