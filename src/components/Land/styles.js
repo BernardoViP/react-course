@@ -33,6 +33,6 @@ export const HeaderTextP = styled.p`
   font-weight: 400;
   padding-right: 200px;
 `
-// Nav
+// Gallery
 
-// Footer
+// Contact

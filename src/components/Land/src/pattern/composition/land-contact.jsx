@@ -1,6 +1,6 @@
 import '../../../styles.js'
 
-export default function Footer() {
+export default function Contact() {
     return (
         <div></div>
     )

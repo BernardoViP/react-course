@@ -1,0 +1,9 @@
+.titulo{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.descrição{
+    font-size: 24px;
+    color: chartreuse;
+}

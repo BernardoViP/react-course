@@ -1,8 +1,6 @@
 import '../../../styles.js'
 import { HeaderContainer, HeaderTextH, HeaderTextP } from '../../../styles.js'
 
-
-
 export default function Header() {
     return (
         <HeaderContainer>

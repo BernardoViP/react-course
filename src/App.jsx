@@ -1,11 +1,11 @@
 import "./App.css"
-import LandComposition from "./components/Land";
+import Header from "./styles/header-module/components/Header";
 
 
 function App() {
   return (
     <body>
-      <LandComposition />
+      <Header />
     </body>
   );
 }
