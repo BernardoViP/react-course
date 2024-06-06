@@ -1,11 +1,10 @@
 import "./App.css"
-import Navbar from "./hooks/components/navbar";
-
+import { MenuDropDown } from "./hooks/components/Menu";
 
 function App() {
   return (
     <body>
-      <Navbar />
+      <MenuDropDown />
     </body>
   );
 }

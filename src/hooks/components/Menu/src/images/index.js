@@ -1,0 +1,1 @@
+export {default as Relume} from "./Relume.png"

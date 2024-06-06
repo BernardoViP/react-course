@@ -15,9 +15,13 @@ export default function Navbar() {
     return(
     <NavWrapper>
      <NavContainer>
+
         <NavText>Logo</NavText>
+
         <NavButton onClick={HandleNav}>
+
             <NavImage src={handleAngle}/>
+            
         </NavButton>
      </NavContainer>
 
