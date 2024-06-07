@@ -1,35 +1,46 @@
-import { useState } from "react";
-import { Up , Stable } from "./src/images";
-import { NavButton, NavContainer, NavContent, NavImage, NavText, NavWrapper, ContentText } from "./style"
+import { useState } from "react"
+import * as S from "./style"
+import DropdownMenu from "../Menu"
 
 export default function Navbar() {
 
-    function HandleNav(){
-        return setVisible(!visible)
-    }
-//  controle de estado do content
-    const [ visible, setVisible ] = useState(false)
+    const [open, setOpen] = useState(false)
 
-    const handleAngle = visible === false ? Stable : Up
+    const listpages = [
+        {
+          title: "Page one",
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+        },
+        {
+          title: "Page one",
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+        },
+        {
+          title: "Page one",
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+        },
+        {
+          title: "Page one",
+          description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+        },
+      ];
 
-    return(
-    <NavWrapper>
-     <NavContainer>
-
-        <NavText>Logo</NavText>
-
-        <NavButton onClick={HandleNav}>
-
-            <NavImage src={handleAngle}/>
-            
-        </NavButton>
-     </NavContainer>
-
-     {visible && (
-        <NavContent>
-            <ContentText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque porro ex error dolores excepturi. Qui eum ea, magnam odio rem vero eveniet quaerat ab nisi sed ipsam ipsum reiciendis modi.</ContentText>
-        </NavContent>
-     )}
-     </NavWrapper>
-    );
+    return (
+        <S.Container>
+            <S.Logo>Logo</S.Logo>
+            <S.Nav>
+                <S.Link>Link 1</S.Link>
+                <S.Link>Link 2</S.Link>
+                <S.Link>Link 3</S.Link>
+                <S.Link>Link 4</S.Link>
+                {
+                     open && <DropdownMenu pages={listpages}/>
+                }
+                <S.ContainerButton>
+                    <S.Button>Button</S.Button>
+                    <S.Button bgColor="black">Button</S.Button>
+                </S.ContainerButton>
+            </S.Nav>
+        </S.Container>
+    )
 }
