@@ -1,10 +1,12 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
+    position: absolute;
+    top: 60px;
+    right:140px;
     width: 408px;
     height: auto;
     padding: 24px;
-
     display: flex;
     flex-direction: column;
     border: 1px solid black;

@@ -4,9 +4,9 @@ import DropdownMenu from "../Menu"
 
 export default function Navbar() {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(true)
 
-    const listpages = [
+    const listPages = [
         {
           title: "Page one",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
@@ -34,13 +34,13 @@ export default function Navbar() {
                 <S.Link>Link 3</S.Link>
                 <S.Link>Link 4</S.Link>
                 {
-                     open && <DropdownMenu pages={listpages}/>
+                    open && <DropdownMenu pages={listPages} /> 
                 }
                 <S.ContainerButton>
                     <S.Button>Button</S.Button>
                     <S.Button bgColor="black">Button</S.Button>
                 </S.ContainerButton>
             </S.Nav>
-        </S.Container>
+        </S.Container>  
     )
 }
