@@ -1,10 +1,22 @@
 import "./App.css";
+import { Routes, Route, } from "react-router-dom"
 import Navbar from "./hooks/components/Navbar";
-import Form from "./styles/tailwind-css/form";
+import TeamComposition from "./components/Team";
+
+function Home() {
+  return(
+    <Navbar />
+  )
+}
 
 function App() {
     return (
-      <Navbar />
+      <body>
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="/teams" Component={TeamComposition} />
+        </Routes>
+      </body>
   );
 }
 
