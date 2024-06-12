@@ -6,6 +6,10 @@ export default function Navbar() {
 
     const [open, setOpen] = useState(true)
 
+    const handleMenu = () => {
+      return setOpen(!open)
+    }
+
     const listPages = [
         {
           title: "Page one",
@@ -32,7 +36,7 @@ export default function Navbar() {
                 <S.Link>Link 1</S.Link>
                 <S.Link>Link 2</S.Link>
                 <S.Link>Link 3</S.Link>
-                <S.Link>Link 4</S.Link>
+                <S.Link onClick={handleMenu}>Link 4</S.Link>
                 {
                     open && <DropdownMenu pages={listPages} /> 
                 }
