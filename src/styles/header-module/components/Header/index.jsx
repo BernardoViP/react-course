@@ -1,15 +1,14 @@
 import styles from "./style.module.css"
-import Image from "../../assets/image/Image.png"
 
 export default function Header(){
     return(
-        <div className={styles.back}>
-        <p className={styles.tag}>Blog</p>
-        <h1 className={styles.head}>Short heading here</h1>
-        <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <div className={styles.boximg}>
-            <img src={Image} alt="" />
+        <div className={styles.box}>
+            <div className={styles.image}>
+                <div className={styles.headbox}>
+                    <h1 className={styles.heading}>Short heading here</h1>
+                    <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
+                </div>
+            </div>
         </div>
-        </div>
-)
+    )
 }
