@@ -37,7 +37,9 @@ export default function Navbar() {
                 <S.Link>
                   <Link to="/teams">Teams</Link>
                 </S.Link>
-                <S.Link>Link 2</S.Link>
+                <S.Link>
+                  <Link to="/form">Login</Link>
+                </S.Link>
                 <S.Link>Link 3</S.Link>
                 <S.Link onClick={handleMenu}>Link 4</S.Link>
                 {
