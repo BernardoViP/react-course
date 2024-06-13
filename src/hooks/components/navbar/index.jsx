@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 export default function Navbar() {
 
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     const handleMenu = () => {
       return setOpen(!open)
@@ -13,19 +13,19 @@ export default function Navbar() {
 
     const listPages = [
         {
-          title: "Page one",
+          title: "Formulário",
+          description: "Preencha seu login.",
+        },
+        {
+          title: "Page two",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
         },
         {
-          title: "Page one",
+          title: "Page three",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
         },
         {
-          title: "Page one",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-        },
-        {
-          title: "Page one",
+          title: "Page four",
           description: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
         },
       ];

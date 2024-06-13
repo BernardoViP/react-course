@@ -39,5 +39,5 @@ export const Button = styled.button`
     align-items: center;
     border: 1px solid black;
     color: ${props => props.bgColor ? 'white' : 'black'};
-    background-color: ${props => props.bgColor ? props.bgColor : 'transparent'} ;
+    background-color: ${props => props.bgColor ? props.bgColor : 'white'} ;
 `

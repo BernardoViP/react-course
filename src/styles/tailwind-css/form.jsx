@@ -2,7 +2,7 @@ import * as React from "react";
 
 export default function Form() {
   return (
-    <div className="items-center justify-center lg:w-1/2 m-auto bg-white px-10 py-20 rounded-3xl border-2 border-gray">
+    <div className=" items-center justify-center lg:w-1/3 m-auto mt-32 bg-white px-10 py-20 rounded-3xl border-2 border-gray">
       <h1 className="text-5xl font-semibold">Welcome Back</h1>
       <p className="font-medium text-lg text-gray-500 mt-4">
         Welcome back! Please enter your details.
