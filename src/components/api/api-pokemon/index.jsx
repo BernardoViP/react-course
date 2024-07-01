@@ -29,12 +29,11 @@ export default function GetPokemon() {
                         <div className="mb-3 shadow-2xl shadow-violet-600 mt-11 rounded-lg p-4 flex flex-col items-center justify-center w-20 h-30 gap-3">
                             <p>{pokedex.name}</p>
                             <img src={pokedex.sprites.front_default} alt="" />
-                            <p>shiny:</p>
+                            <p>shiny</p>
                             <img src={pokedex.sprites.front_shiny} alt="" />
                         </div>
 
             }
-
         </div>
     )
 }
